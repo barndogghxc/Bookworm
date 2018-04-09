@@ -5,8 +5,14 @@ Brian Martinez / April 9, 2018
 ## Bookworm Proposal  
 	"We need to make books cool again. If you go home with somebody and they dont have books, don't have sex with them" John Waters
 	Bookworm is my attempt at making a simple social media matching application like tinder for bookworms. 
-	A user will theoretically be able to sign in and or sign up. Upload a picture(s) of themselves and their currently reading book and their favorite books.
-	Once there they will be able to view other users pictures/list of books and swipe left or right. If you happen to match with a user you can start up a messaging conversation.
+	Sign up/Login through Facebook.
+	Manage User profile and set discovery preferences.
+	Swipe to Like/Dislike a profile.
+	Real Time Chat.
+	Push notifications.
+	Geopositioning/GeoTagging.
+	A Match Making Algorithm.
+
 
 ## Entity Relationship Diagram
 ![imagename](./assets/bookworm.png)
@@ -26,19 +32,11 @@ Brian Martinez / April 9, 2018
 
 ## Technology
 
-	React Native with Rails
+	React Native with Express
 
 ## Extras
-	Save data from a Good Reads API into my database
-	Include sign up/log in functionality**, with encrypted passwords & authorization with bcrypt
-	Hit additional models. (Books in Genre Tables)
-	Hit more external API's (Amazon, Google Maps)
-	Explore additional NPM packages
-	Python Document Cluster that I will get to when I'm a competent developer
 
 ## Timeline
-	Saturday Update proposal, update ERD, research API's, made skeleton of app. Life. 
-    Sinday Made a SQL table from goodreads list to mimic goodreads api. Life. Wireframes, user stories, database structure. Project board, API, proof of concept.
     _ Monday CODE
     _ Tuesday CODE
     _ Wednesday CODE/Life
