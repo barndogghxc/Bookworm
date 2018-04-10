@@ -1,10 +1,7 @@
 import React from 'react';
 import style from './style.js';
-import Home from './views/Home.js';
-import { 
-  Text, 
-  View 
-} from 'react-native';
+import Home from './pages/Home.js';
+import { View, Text } from 'react-native';
 
 export default class App extends React.Component {
   render() {

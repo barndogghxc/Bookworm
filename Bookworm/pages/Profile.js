@@ -1,19 +1,15 @@
 import React from 'react';
 import style from '../style';
-
-import {
-	Text,
-	View
-} from 'react-native';
+import { View, Text } from 'react-native';
 
 class Profile extends React.Component {
 	state = {}
-	componentWillMount(){}
+	UNSAFE_componentDidMount(){}
 
 	render() {
       return (
 	   <View>
-		 <text>Profile</text>
+		 <Text>Profile</Text>
 	   </View>
 	  )
 	}

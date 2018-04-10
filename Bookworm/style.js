@@ -8,6 +8,6 @@ const style = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})
 
 module.exports = style

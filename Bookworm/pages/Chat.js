@@ -1,19 +1,15 @@
 import React from 'react';
 import style from '../style';
-
-import {
-	Text,
-	View
-} from 'react-native';
+import { View, Text } from 'react-native';
 
 class Chat extends React.Component {
 	state = {}
-	componentWillMount(){}
+	UNSAFE_componentDidMount(){}
 
 	render() {
       return (
 	   <View>
-		 <text>Chat</text>
+		 <Text>Chat</Text>
 	   </View>
 	  )
 	}
