@@ -1,25 +1,25 @@
 import React from 'react';
-import Home from '../pages/Home';
-import Profile from '../pages/Profile';
-import Matches from '../pages/Matches';
+import Home from '../screens/Home';
+import Profile from '../screens/Profile';
+import Matches from '../screens/Matches';
 import { TabNavigator } from 'react-navigation';
 
 export default TabNavigator(
   {
     Home: {
-      page: Home,
+      screen: Home,
       navigationOptions: {
         tabBarLabel: 'Home',
-      }
+      },
     },
     Profile: {
-      page: Profile,
+      screen: Profile,
       navigationOptions: {
         tabBarLabel: 'Profile',
       },
     },
     Matches: {
-      page: Matches,
+      screen: Matches,
       navigationOptions: {
         tabBarLabel: 'Matches',
       },
