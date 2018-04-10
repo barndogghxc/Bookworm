@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 
 class Matches extends React.Component {
 	state = {}
-	UNSAFE_componentDidMount(){}
+	componentWillMount(){}
 
 	render() {
       return (

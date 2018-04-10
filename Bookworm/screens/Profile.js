@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 
 class Profile extends React.Component {
 	state = {}
-	UNSAFE_componentDidMount(){}
+	componentWillMount(){}
 
 	render() {
       return (

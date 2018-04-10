@@ -29,13 +29,11 @@ export default TabNavigator(
     navigationOptions: {
       header: null
     },
-    tabBarPosition: 'bottom',
+    tabBarPosition: 'top',
     initialRouteName: 'Home',
     animationEnabled: true,
     swipeEnabled: true,
     tabBarOptions: {
-      activeTintColor: 'black',
-      inactiveTintColor: 'gray',
       style: {
         height: 100
       },
