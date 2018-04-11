@@ -49,7 +49,15 @@ Brian Martinez / April 9, 2018
 ## Obstacles
 	Figuring out matching algorithm
 
-## Links and Resources   
-
-
+## Links and Resources  
+Expo Docs 
+https://docs.expo.io/versions/latest/
+React Navigation Docs
+https://reactnavigation.org/docs/getting-started.html
+Redux Docs
+https://redux.js.org/
+Facebook Login Docs
+https://developers.facebook.com/docs/facebook-login/ios
+https://docs.expo.io/versions/latest/sdk/facebook.html
+Github Repo Link
 https://github.com/barndogghxc/bookworm

@@ -1,5 +1,10 @@
 {
   "expo": {
-    "sdkVersion": "26.0.0"
+    "sdkVersion": "26.0.0",
+    "facebookAppId":"815516641982277",
+    "facebookDisplayName": "BookWorm"
   }
 }
+
+
+

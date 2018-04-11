@@ -2,7 +2,7 @@ import React from 'react';
 import style from './style';
 import RootNavigator from './nav/RootNavigator';
 import reducers from './redux/reducers';
-import { View, Text } from 'react-native';
+import { View, Text, Alert } from 'react-native';
 import thunkMiddleware from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
@@ -18,5 +18,6 @@ export default class App extends React.Component {
     );
   }
 }
+
 
 

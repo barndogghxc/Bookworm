@@ -1,6 +1,6 @@
 import React from 'react';
 import style from '../style';
-import { View, Text } from 'react-native';
+import { View, Text, Alert } from 'react-native';
 
 class Matches extends React.Component {
 	state = {}
