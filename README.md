@@ -3,8 +3,7 @@
 Brian Martinez / April 9, 2018 
 
 ## Bookworm Proposal  
-	"We need to make books cool again. If you go home with somebody and they dont have books, 
-	don't have sex with them" John Waters
+	"We need to make books cool again. If you go home with somebody and they dont have books, don't have sex with them" John Waters
 	Bookworm is my attempt at making a simple social media matching application like tinder for bookworms. 
 	Sign up/Login through Facebook.
 	Manage User profile and set discovery preferences.
@@ -55,5 +54,8 @@ Brian Martinez / April 9, 2018
 	Facebook Login Docs
 	https://developers.facebook.com/docs/facebook-login/ios
 	https://docs.expo.io/versions/latest/sdk/facebook.html
+	Firebase Docs
+	https://firebase.google.com/docs/
+	https://docs.expo.io/versions/latest/guides/using-firebase.html
 	Github Repo Link
 	https://github.com/barndogghxc/bookworm
