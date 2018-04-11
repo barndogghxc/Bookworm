@@ -57,5 +57,6 @@ Brian Martinez / April 9, 2018
 	Firebase Docs
 	https://firebase.google.com/docs/
 	https://docs.expo.io/versions/latest/guides/using-firebase.html
+	https://firebase.google.com/docs/database/web/read-and-write
 	Github Repo Link
 	https://github.com/barndogghxc/bookworm
