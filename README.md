@@ -3,7 +3,8 @@
 Brian Martinez / April 9, 2018 
 
 ## Bookworm Proposal  
-	"We need to make books cool again. If you go home with somebody and they dont have books, don't have sex with them" John Waters
+	"We need to make books cool again. If you go home with somebody and they dont have books, 
+	don't have sex with them" John Waters
 	Bookworm is my attempt at making a simple social media matching application like tinder for bookworms. 
 	Sign up/Login through Facebook.
 	Manage User profile and set discovery preferences.
