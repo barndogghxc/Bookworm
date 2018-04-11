@@ -1,6 +1,5 @@
 import React from 'react';
 import style from '../style';
-import styles from '../styles'
 import { connect } from 'react-redux';
 import { View, Text, Image } from 'react-native';
 
