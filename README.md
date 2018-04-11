@@ -15,7 +15,7 @@ Brian Martinez / April 9, 2018
 
 
 ## Entity Relationship Diagram
-![imagename](./assets/bookworm.png)
+![imagename](./assets/BookWormERD.png)
 
 
 ## Wireframe 
