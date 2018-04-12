@@ -6,7 +6,7 @@ import { login } from '../redux/actions';
 import * as firebase from 'firebase';
 import firebaseConfig from '../config/firebase.js';
 firebase.initializeApp(firebaseConfig);
-import { View, Text, Alert, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 
 class Login extends React.Component {
@@ -14,16 +14,15 @@ class Login extends React.Component {
   componentWillMount() {
     firebase.auth().onAuthStateChanged((user) => {
       if (user != null) {
-        this.props.dispatch(login(true))
-        console.log("Authenticated" + JSON.stringify(user));
+        this.props.dispatch(login(user))
       }
     });
   }
 
-	login = async () => {
+  login = async () => {
     const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync('815516641982277', {
         permissions: ['public_profile'],
-    	});
+      });
     if (type === 'success') {
       // Build Firebase credential with the Facebook access token.
       const credential = await firebase.auth.FacebookAuthProvider.credential(token);
@@ -35,21 +34,21 @@ class Login extends React.Component {
       });
     }
   } 
- 
-	render() {
+
+  render() {
     if(this.props.loggedIn){
       return (
         <RootNavigator/>
       )
     } else {
       return (
-  	    <View style={style.container}>
+        <View style={style.container}>
           <TouchableOpacity onPress={this.login.bind(this)}>
             <Text>Login</Text>
           </TouchableOpacity>
-  	    </View>
-	    )
-	  }
+        </View>
+      )      
+    }
   }
 }
 
@@ -58,4 +57,5 @@ function mapStateToProps(state) {
     loggedIn: state.loggedIn
   };
 }
+
 export default connect(mapStateToProps)(Login);

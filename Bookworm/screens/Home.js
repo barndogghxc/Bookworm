@@ -1,8 +1,9 @@
 import React from 'react';
 import style from '../style';
-import { View, Text, Alert } from 'react-native';
 import { connect } from 'react-redux';
-import { login } from '../redux/actions';
+import { View, Text } from 'react-native';
+
+
 
 class Home extends React.Component {
   state = {}
@@ -25,6 +26,5 @@ function mapStateToProps(state) {
     loggedIn: state.loggedIn
   };
 }
-
 
 export default connect(mapStateToProps)(Home);

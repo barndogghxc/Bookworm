@@ -1,11 +1,12 @@
 import React from 'react';
-import style from '../style';
+import style from '../style'
 import { connect } from 'react-redux';
-import { View, Text, Image } from 'react-native';
+import { Text, View, Image } from 'react-native';
 
 class Profile extends React.Component {
   state = {}
-  componentWillMount(){}
+
+  componentWillMount() {}
 
   render() {
     return (
