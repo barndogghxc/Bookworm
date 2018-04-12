@@ -7,7 +7,7 @@ export function login(user){
 	  photoUrl: user.photoURL,
 	  name: user.displayName,
 	  aboutMe: ' ',
-	  currBook: ' ',
+	  currentBook: ' ',
 	  favBooks: ' ',
 	  chats: ' ',
 	  geocode: ' ',
@@ -23,12 +23,11 @@ export function login(user){
 
 	firebase.database().ref('cards/').child(user.uid).once('value', function(snapshot){
 	  if(snapshot.val() !== null){
-	    dispatch({ type: 'LOGIN', payload: snapshot.val(), loggedIn: true });
+	    dispatch({ type: 'LOGIN', user: snapshot.val(), loggedIn: true });
 	  } else {
 	    firebase.database().ref('cards/' + user.uid ).update(params);
 	    dispatch({ type: 'LOGIN', user: params, loggedIn: true });
 	  }
 	})
-	dispatch({ type: 'LOGIN', user: params, loggedIn: true });
   }
 }

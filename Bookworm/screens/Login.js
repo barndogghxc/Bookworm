@@ -8,7 +8,6 @@ import firebaseConfig from '../config/firebase.js';
 firebase.initializeApp(firebaseConfig);
 import { View, Text, TouchableOpacity } from 'react-native';
 
-
 class Login extends React.Component {
 	state = {}
   componentWillMount() {

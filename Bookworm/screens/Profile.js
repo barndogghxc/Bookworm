@@ -13,7 +13,7 @@ class Profile extends React.Component {
       <View>
         <Text>{this.props.user.id}</Text>
         <Text>{this.props.user.name}</Text>
-        <Image style={{ width: 75, height: 75}} source={{uri: this.props.user.photoUrl}}/>
+        <Image style={{ width: 100, height: 100}} source={{uri: this.props.user.photoUrl}}/>
       </View>
     )
   }
