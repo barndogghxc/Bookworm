@@ -58,5 +58,9 @@ Brian Martinez / April 9, 2018
 	https://firebase.google.com/docs/
 	https://docs.expo.io/versions/latest/guides/using-firebase.html
 	https://firebase.google.com/docs/database/web/read-and-write
+	AWS Images Docs
+	https://docs.expo.io/versions/latest/sdk/imagepicker.html
+	https://docs.aws.amazon.com
+	https://github.com/benjreinhart/react-native-aws3
 	Github Repo Link
 	https://github.com/barndogghxc/bookworm
