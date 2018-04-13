@@ -1,4 +1,3 @@
-
 export default reducers = (state = {
 	loggedIn: false,
 	user: {
@@ -18,13 +17,19 @@ export default reducers = (state = {
 	  token: ' ',
 	}
   }, action) => {
-	switch (action.type) {
-	  case 'LOGIN': {
-		return { ...state, user: action.user, loggedIn: action.loggedIn }
-	  }
-	  case 'UPLOAD_IMAGES': {
-		return { ...state, user: {...state.user, images: action.payload } }
-	  }
-	}
-	return state;
-}	
+    switch (action.type) {
+      case 'LOGIN': {
+        return { ...state, user: action.user, loggedIn: action.loggedIn }
+      }
+      case 'UPLOAD_IMAGES': {
+        return { ...state, user: {...state.user, images: action.payload } }
+      }
+      // case 'LOGOUT': {
+      //   return { ...state, loggedIn: action.loggedIn }
+      // }
+      // case 'UPDATE_ABOUT':      
+      //   return { ...state, user: { ...state.user, aboutMe : action.payload } 
+      // }
+    }
+    return state;
+} 

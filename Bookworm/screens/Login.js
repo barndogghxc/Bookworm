@@ -1,15 +1,16 @@
 import React from 'react';
-import style from '../style';
+import style from '../style'
 import RootNavigator from '../nav/RootNavigator';
 import { connect } from 'react-redux';
-import { login } from '../redux/actions';
+import { login } from '../redux/actions'
 import * as firebase from 'firebase';
-import firebaseConfig from '../config/firebase.js';
+import firebaseConfig from '../config/firebase.js'
 firebase.initializeApp(firebaseConfig);
-import { View, Text, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 
 class Login extends React.Component {
-	state = {}
+  state = {}
+
   componentWillMount() {
     firebase.auth().onAuthStateChanged((user) => {
       if (user != null) {

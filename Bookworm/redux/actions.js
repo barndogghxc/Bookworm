@@ -2,6 +2,7 @@ import * as firebase from 'firebase';
 import aws from '../config/aws';
 import { ImagePicker } from 'expo';
 import { RNS3 } from 'react-native-aws3';
+import { Alert } from 'react-native';
 
 export function login(user){
   return function(dispatch){
@@ -35,9 +36,17 @@ export function login(user){
   }
 }
 
+export function logout(){
+  return function(dispatch){
+  firebase.auth().signOut()
+  dispatch({ type: 'LOGOUT', loggedIn: false });
+  }
+}
+
 export function uploadImages(images){
   return function(dispatch){
   	ImagePicker.launchImageLibraryAsync({ allowsEditing: false }).then(function(result){
+	  
 	  let array = images
 	  if(result.uri != undefined){
 	    const file = {
@@ -45,6 +54,7 @@ export function uploadImages(images){
 	      name: result.uri,
 	      type: "image/png"
 	    }
+
 	    const options = {
 	      keyPrefix: "uploads/",
 	      bucket: "testbookworm",
@@ -53,14 +63,34 @@ export function uploadImages(images){
 	      secretKey: aws.secretKey,
 	      successActionStatus: 201
 	    }
+
 	    RNS3.put(file, options).then(function(response){
 	      if (response.status === 201){
 	        array.push(response.body.postResponse.location)
-	        firebase.database().ref('cards/' + firebase.auth().currentUser.uid + '/images').set(array);
 	        dispatch({ type: 'UPLOAD_IMAGES', payload: array });
 	      }
 	    })
 	  }
+	
 	})
   }
+}
+
+export function deleteImage(images, key){
+  return function(dispatch){
+  Alert.alert(
+    'Are you sure you want to Delete',
+    '',
+    [
+      {text: 'Ok', onPress: () => {
+        let array = images
+        array.splice(key, 1)
+    	  dispatch({ type: 'UPLOAD_IMAGES', payload: array });
+        firebase.database().ref('cards/' + firebase.auth().currentUser.uid + '/images').set(array);
+      }},
+      {text: 'Cancel', onPress: () => console.log('Cancel Pressed')},
+    ],
+      { cancelable: true }
+    )
+	}
 }

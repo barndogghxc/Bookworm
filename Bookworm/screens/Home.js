@@ -3,14 +3,10 @@ import style from '../style';
 import { connect } from 'react-redux';
 import { View, Text } from 'react-native';
 
-
-
 class Home extends React.Component {
   state = {}
   
-  componentWillMount(){
-
-  }
+  componentWillMount(){}
 
   render() {
     return (

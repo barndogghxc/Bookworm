@@ -1,6 +1,6 @@
 const aws = {
-	secretKey: 'q5fuzYIvvZKYIhjjkSUjUUI8QuBNAZc0pPEVjbhD',
-	accessKey: 'AKIAJGA6QNSACDGEZXJA'
+	secretKey: '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',
+	accessKey: 'AKIAJ7P5RV4VQ2QMAFTA'
 }
 
 module.exports = aws
