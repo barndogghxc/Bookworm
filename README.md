@@ -23,11 +23,7 @@ Brian Martinez / April 9, 2018
 
 
 ## User Stories  
-	User 1 - 32 year old male, avid reader, recent break up, looking for a women to enjoy silence with. 
-
-	User 2 - 28 year old female, sapiosexual, enjoy going on vacation and enjoying a good book
-
-	User 3 - 50 year old female, well off widow, donates to local libraries, lonely![imagename](./assets/lucidChart.png)
+![imagename](./assets/userStories.png)
     
 
 ## Technology
